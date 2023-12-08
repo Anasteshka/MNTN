@@ -4,7 +4,10 @@ body {
   color: #ffffff;
   background-color: #0b1d26;
   box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
-  background-image: ;
+  background-image: url(./images/bg-img/hero-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
 }
 
 a {
@@ -35,13 +38,23 @@ img {
   height: auto;
 }
 
+button {
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
 .container {
   padding: 0 80px;
 }
 
+section.container {
+  padding: 100px 229px;
+}
+
 .header {
   padding-top: 60px;
-  padding-bottom: 640px;
+  padding-bottom: 740px;
 }
 
 .page-nav {
@@ -72,10 +85,23 @@ img {
   line-height: normal;
 }
 
-.header-login {
+.login-btn {
   font-size: 17px;
   font-weight: 700;
   line-height: normal;
+  background-color: transparent;
+  border: none;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
 }
 
 .hero {
@@ -96,12 +122,22 @@ img {
   margin: 0;
 }
 
+.soc-item {
+  width: 24px;
+  height: 24px;
+}
+
 .soc-link {
+  display: inline-flex;
+}
+
+.soc-icon {
   fill: #ffffff;
 }
 
 .hero-text {
   max-width: 950px;
+  margin-left: 80px;
 }
 
 .hero-subtitle::before {
@@ -150,7 +186,7 @@ img {
 .scrollbar-list {
   height: 240px;
   overflow-y: scroll;
-  padding: 16px 32px;
+  padding: 16px 32px 16px 0;
   text-align: right;
   margin-top: 40px;
 }
@@ -172,4 +208,83 @@ img {
 
 .scrollbar-list::-webkit-scrollbar-thumb {
   background: #ffffff;
+}
+
+.article-discription {
+  width: 632px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.article-subtitle {
+  color: #fbd784;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 96px;
+}
+
+.article-subtitle::before {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+  position: absolute;
+  top: 50%;
+  left: -96px;
+  transform: translateY(-50%);
+}
+
+.article-title {
+  font-family: "Playfair", serif;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.article-recap {
+  font-weight: 700;
+  line-height: 1.78;
+}
+
+.article-link {
+  color: #fbd784;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.read-arrow {
+  width: 16px;
+  height: 24px;
+  transform: rotate(-90deg);
+  fill: #fbd784;
+}
+
+.img-thumb {
+  width: 566px;
+  height: 720px;
+}
+
+.article-image {
+}
+
+.article-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-section:nth-child(even) {
+}
+
+.article-section:nth-child(odd) {
+  justify-content: right;
+  gap: 114px;
 }
